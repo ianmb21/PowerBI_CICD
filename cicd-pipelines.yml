@@ -10,8 +10,9 @@ pool:
   vmImage: windows-latest
 
 steps:
-- task: CopyFiles@2
+- task: PowerBIActions@5
   inputs:
-    SourceFolder: 'test'
-    Contents: '**'
-    TargetFolder: 'test'
+    PowerBIServiceEndpoint: 'PowerBI_Connection'
+    Action: 'Publish'
+    WorkspaceName: 'MyDemo_IB'
+    PowerBIPath: '/SampleReport.pbix'
