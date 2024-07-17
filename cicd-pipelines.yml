@@ -15,4 +15,4 @@ steps:
     PowerBIServiceEndpoint: 'PowerBI_ConnectionPersonal'
     Action: 'Publish'
     WorkspaceName: 'MyDemo_IB'
-    PowerBIPath: '$(Build.StagingDirectory)/SampleReport.pbix'
+    PowerBIPath: '$(Build.Repository.LocalPath)/SampleReport.pbix'
