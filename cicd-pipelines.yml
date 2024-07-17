@@ -12,7 +12,7 @@ pool:
 steps:
 - task: PowerBIActions@5
   inputs:
-    PowerBIServiceEndpoint: 'PowerBI_Connection'
+    PowerBIServiceEndpoint: 'PowerBI_ConnectionPersonal'
     Action: 'Publish'
     WorkspaceName: 'MyDemo_IB'
     PowerBIPath: '/SampleReport.pbix'
